@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav&display=swap');
+img{
+    padding: 10px;
+}
+
+body{
+
+    margin: 0px;
+}
+
+/* start of header formatting */
+.top{
+    background-image: url(scott-webb-OxHPDs4WV8Y-unsplash.jpg);
+    background-size: auto;
+}
+h1{
+    text-align: center;
+    padding: 70px;
+    margin: 0%;
+    font-family: 'Yantramanav', sans-serif;    
+    font-size: 100px;
+    color: black;
+}
+
+.searchBar{
+    display: flex;
+    align-items: center;
+    margin: 0%;
+    padding-bottom: 50px;
+    position: relative;
+    justify-content: center;
+}
+
+#searchID{
+    width: 350px;
+    height: 40px;
+    border-radius: 10px;
+    border: solid rgb(136, 136, 136) 1px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.searchBar img:hover{
+    cursor: pointer;
+}
+
+/* end of header formatting */
+
+#myList{
+    width: 800px;
+}
+
+/* start of character list */
+.character{
+    font-family: 'Yantramanav', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 18px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.character #activity{
+    padding: 20px;
+    padding-left: 20px;
+    width: 200px;
+}
+.character #type{
+    padding: 20px;
+    width: 100px;
+}
+.character #price{
+    padding: 20px;
+    width: 100px;
+}
+.character #category{
+    padding: 20px;
+    width: 100px;
+}
+
+/* end of character list */
+
+/* start of labels of the table */
+.tableLabel{
+    font-family: 'Yantramanav', sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+.activityLabel{
+    padding: 10px;
+    padding-left: 60px;
+    width: 200px;
+}
+.typeLabel{
+    padding: 10px;
+    padding-left: 50px;
+    width: 100px;
+}
+
+.catLabel{
+    padding: 10px;
+    padding-left: 50px;
+    width: 100px;
+}
+
+.priceLabel{
+    padding: 10px;
+    padding-left: 50px;
+    width: 100px;
+}
+
+/* end of labels of the table */
+
+/* start of advance search menu */
+.grid1{
+    font-family: 'Yantramanav', sans-serif;
+    text-align: center;
+    padding: 30px;
+    border-right: #f8f8f8 solid 3px;
+}
+/* end of advance search menu */
+
+.grid2{
+    height: 500px;
+}
+
+.grid1 .checkboxClass{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.gridLayout{
+    max-width: 1200px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 2fr;
+}

@@ -1,0 +1,45 @@
+[
+    {
+        "activity" : "Sky Diving",
+        "type":"Sport",
+        "category":"Sky",
+        "tags": ["Adrenaline", "Thrill"],
+        "price": ["$$$"],
+        "color":  "#a9e4ff"
+    },
+    {
+        "activity" : "Tea Drinking",
+        "type":"Dining",
+        "category":"Zen",
+        "tags": ["Calming", "Relax", "Drink"],
+        "price": ["$ "," $$"],
+        "color":  "#fff6a9"
+
+    },
+    {
+        "activity" : "Basketball",
+        "type":"Sport",
+        "category":"Outdoor",
+        "tags": ["Physical", "Athletics", "Exciting"],
+        "price": ["$"],
+        "color":  "#ffa9a9"
+
+    },
+    {
+        "activity" : "Volleyball",
+        "type":"Sport",
+        "category":"Sand",
+        "tags": ["Physical", "Athletics", "Exciting","Beach"],
+        "price": ["$"],
+        "color":  "#ffa9a9"
+    },
+    {
+        "activity" : "Samgyupsal",
+        "type":"Dining",
+        "category":"Restaurant",
+        "tags": ["Smokey", "Meat"],
+        "price": ["$"," $$"," $$$"],
+        "color":  "#fff6a9"
+    }
+]
+
