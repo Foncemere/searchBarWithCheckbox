@@ -12,6 +12,21 @@ categoryList = [];
 bool = false;
 bool2 = false;
 
+for(i=0;i<checkbox.length;i++){
+    checkbox[i].addEventListener("click", (e)=> {
+        console.log(e);
+        if(e.target.checked){
+            categoryList.push(e.target.value);
+        }else{
+            let index = categoryList.indexOf(e.target.value)
+            if (index > -1){
+                categoryList.splice(index,1);
+            }
+        }
+        filteringProcess(finalList, categoryList)
+    });
+}
+
 const arrangeActivity = () =>{
     bool = !bool;
     if (bool){    
@@ -59,24 +74,9 @@ searchBar.addEventListener("keyup", e => {
     filteringProcess(finalList, categoryList);
 });
 
-for(i=0;i<checkbox.length;i++){
-    checkbox[i].addEventListener("click", (e)=> {
-        console.log(e);
-        if(e.target.checked){
-            categoryList.push(e.target.value);
-        }else{
-            let index = categoryList.indexOf(e.target.value)
-            if (index > -1){
-                categoryList.splice(index,1);
-            }
-        }
-        filteringProcess(finalList, categoryList)
-    });
-}
-
 const filteringProcess = (e,w=[]) => {
     if(w.length != 0){
-        let filtered = listedActivities.filter(filter => { 
+        let filtered = finalList.filter(filter => { 
             return (filter.category.includes(w));
         });
         display(filtered)
@@ -115,4 +115,5 @@ const display = (activities) => {
         }).join('');
     theList.innerHTML = toString;
 };
+
 loadList();
