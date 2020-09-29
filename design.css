@@ -45,6 +45,7 @@ h1{
 
 #myList{
     width: 800px;
+    min-height: 800px;
 }
 
 /* start of character list */
