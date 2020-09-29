@@ -3,7 +3,6 @@
         "activity" : "Sky Diving",
         "type":"Sport",
         "category":"Sky",
-        "tags": ["Adrenaline", "Thrill"],
         "price": ["$$$"],
         "color":  "#a9e4ff"
     },
@@ -11,16 +10,14 @@
         "activity" : "Tea Drinking",
         "type":"Dining",
         "category":"Zen",
-        "tags": ["Calming", "Relax", "Drink"],
         "price": ["$ "," $$"],
-        "color":  "#fff6a9"
+        "color":  "#acffa9"
 
     },
     {
         "activity" : "Basketball",
         "type":"Sport",
         "category":"Outdoor",
-        "tags": ["Physical", "Athletics", "Exciting"],
         "price": ["$"],
         "color":  "#ffa9a9"
 
@@ -29,17 +26,85 @@
         "activity" : "Volleyball",
         "type":"Sport",
         "category":"Sand",
-        "tags": ["Physical", "Athletics", "Exciting","Beach"],
         "price": ["$"],
-        "color":  "#ffa9a9"
+        "color":  "#fff6a9"
     },
     {
         "activity" : "Samgyupsal",
         "type":"Dining",
         "category":"Restaurant",
-        "tags": ["Smokey", "Meat"],
         "price": ["$"," $$"," $$$"],
         "color":  "#fff6a9"
+    },
+    {
+        "activity" : "Island Hopping",
+        "type":"Leisure",
+        "category":"Sand",
+        "price": ["$"," $$"," $$$"],
+        "color":  "#fff6a9"
+    },
+    {
+        "activity" : "Scuba Diving",
+        "type":"Sport",
+        "category":"Sand",
+        "price": ["$"," $$"],
+        "color":  "#fff6a9"
+    },
+    {
+        "activity" : "Parasailing",
+        "type":"Sport",
+        "category":"Sand",
+        "price": ["$"," $$"],
+        "color":  "#fff6a9"
+    },
+    {
+        "activity" : "Yoga",
+        "type":"Relaxation",
+        "category":"Zen",
+        "price": ["$ "," $$"],
+        "color":  "#acffa9"
+    },
+    {
+        "activity" : "Sensory Deprivation",
+        "type":"Relaxation",
+        "category":"Zen",
+        "price": ["$ "," $$"],
+        "color":  "#acffa9"
+    },
+    {
+        "activity" : "Golf",
+        "type":"Sport",
+        "category":"Outdoor",
+        "price": ["$"," $$"],
+        "color":  "#ffa9a9"
+    },
+    {
+        "activity" : "Star Gazing",
+        "type":"Relaxation",
+        "category":"Outdoor",
+        "price": ["Free"],
+        "color":  "#ffa9a9"
+    },
+    {
+        "activity" : "Rafting",
+        "type":"Sport",
+        "category":"Outdoor",
+        "price": ["$"],
+        "color":  "#ffa9a9"
+    },
+    {
+        "activity" : "Camping",
+        "type":"Relaxation",
+        "category":"Outdoor",
+        "price": ["$"," $$"," $$$"],
+        "color":  "#ffa9a9"
+    },
+    {
+        "activity" : "Picnic",
+        "type":"Dining",
+        "category":"Outdoor",
+        "price": ["$"],
+        "color":  "#ffa9a9"
     }
 ]
 

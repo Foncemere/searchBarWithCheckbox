@@ -1,14 +1,57 @@
 const theList = document.getElementById("myList");
+const searchID= document.getElementById("searchID");
 const searchBar = document.querySelector(".searchBar");
 const input = document.getElementsByTagName("input");
 const checkbox = document.querySelectorAll("input[name='checkboxOne']");
-console.log(checkbox.length)
+const activityLabel = document.querySelector(".activityLabel");
+const catLabel = document.querySelector(".catLabel");
+
 listedActivities = [];
 finalList = [];
 categoryList = [];
+bool = false;
+bool2 = false;
 
-searchBar.addEventListener("keyup", input => {
-    searchedInput = input.target.value.toLowerCase();
+const arrangeActivity = () =>{
+    bool = !bool;
+    if (bool){    
+        finalList.sort((a,b) => (a.activity > b.activity) ? 1 : -1);
+        activityLabel.style.borderTop = "#eeeeee solid 3px";
+        activityLabel.style.borderBottom = "white solid 3px";
+        catLabel.style.border = "white solid 3px";
+        bool2 = false;
+    }else{
+        finalList.sort((a,b) => (a.activity > b.activity) ? -1 : 1);
+        activityLabel.style.borderBottom = "#eeeeee solid 3px";
+        activityLabel.style.borderTop = "white solid 3px";
+        catLabel.style.border = "white solid 3px";
+        bool2 = false;
+    }
+    filteringProcess(finalList, categoryList)
+}
+
+const arrangeCat = () =>{
+    bool2 = !bool2;
+    if (bool2){    
+        finalList.sort((a,b) => (a.category > b.category) ? 1 : -1);
+        catLabel.style.borderTop = "#eeeeee solid 3px";
+        catLabel.style.borderBottom = "white solid 3px";
+        activityLabel.style.border = "white solid 3px";
+        bool = false;
+
+    }else{
+        finalList.sort((a,b) => (a.category > b.category) ? -1 : 1);
+        catLabel.style.borderBottom = "#eeeeee solid 3px";
+        catLabel.style.borderTop = "white solid 3px";
+        activityLabel.style.border = "white solid 3px";
+        bool = false;
+
+    }
+    filteringProcess(finalList, categoryList)
+}
+
+searchBar.addEventListener("keyup", e => {
+    searchedInput = e.target.value.toLowerCase();
     let filteredActivity = listedActivities.filter(filter => { 
         return (filter.activity.toLowerCase().includes(searchedInput));
     });
@@ -18,6 +61,7 @@ searchBar.addEventListener("keyup", input => {
 
 for(i=0;i<checkbox.length;i++){
     checkbox[i].addEventListener("click", (e)=> {
+        console.log(e);
         if(e.target.checked){
             categoryList.push(e.target.value);
         }else{
@@ -50,6 +94,7 @@ const loadList = async () => {
         for(i=0;i<checkbox.length;i++){
             checkbox[i].checked = false;
         }
+        searchID.value = "";
     }
     catch(e){
         console.log(e)

@@ -4,7 +4,7 @@ img{
 }
 
 body{
-
+    /* background-image:linear-gradient(to right, #acffa9, #f8f8f8 25%); */
     margin: 0px;
 }
 
@@ -35,14 +35,10 @@ h1{
     width: 350px;
     height: 40px;
     border-radius: 10px;
-    border: solid rgb(136, 136, 136) 1px;
+    border: solid #f8f8f8 1px;
     padding: 10px;
     font-size: 15px;
     font-family: sans-serif;
-}
-
-.searchBar img:hover{
-    cursor: pointer;
 }
 
 /* end of header formatting */
@@ -87,29 +83,38 @@ h1{
     font-family: 'Yantramanav', sans-serif;
     display: flex;
     flex-direction: row;
+    border: white solid 3px;
 }
 
 .activityLabel{
+    margin-left: 20px;
     padding: 10px;
-    padding-left: 60px;
+    padding-left: 40px;
     width: 200px;
+    cursor: pointer;
+    border: white solid 3px;
 }
 .typeLabel{
     padding: 10px;
-    padding-left: 50px;
+    padding-left: 40px;
     width: 100px;
+    border: white solid 3px;
 }
 
 .catLabel{
     padding: 10px;
-    padding-left: 50px;
+    padding-left: 40px;
     width: 100px;
+    cursor: pointer;
+    border: white solid 3px;
 }
 
 .priceLabel{
     padding: 10px;
-    padding-left: 50px;
+    padding-left: 45px;
     width: 100px;
+    border: white solid 3px;
+
 }
 
 /* end of labels of the table */
@@ -119,7 +124,7 @@ h1{
     font-family: 'Yantramanav', sans-serif;
     text-align: center;
     padding: 30px;
-    border-right: #f8f8f8 solid 3px;
+    border-right: #eeeeee solid 3px;
 }
 /* end of advance search menu */
 
